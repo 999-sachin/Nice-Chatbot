@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
+  <!-- Main project structure -->
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <!-- Source code folder -->
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <!-- Unit tests folder -->
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+    </content>
+    <!-- Inherit JDK for compatibility -->
     <orderEntry type="inheritedJdk" />
+    <!-- Reference Python SDK -->
+    <orderEntry type="library" name="Python SDK" level="application" />
+    <!-- Mark source folder -->
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <!-- Python facet for IDE integration -->
+  <component name="FacetManager">
+    <facet type="python" name="Python">
+      <configuration sdkName="Python 3.10" />
+    </facet>
   </component>
 </module>
